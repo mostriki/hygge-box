@@ -26,3 +26,10 @@ img {
     padding: 1em;
     display: block;
 }
+
+.about {
+  text-align: center;
+  display: block;
+  width: 100%;
+  height: auto;
+}
