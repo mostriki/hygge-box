@@ -1,5 +1,5 @@
 {
-  "name": "online-store",
+  "name": "hygge-box",
   "description": "",
   "main": "",
   "license": "MIT",
@@ -12,9 +12,6 @@
     "tests"
   ],
   "dependencies": {
-    "bootstrap": "^3.3.7"
-  },
-  "resolutions": {
-    "bootstrap": "v4.0.0-beta"
+    "bootstrap": "#v4.0.0-beta"
   }
 }
