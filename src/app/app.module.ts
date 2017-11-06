@@ -11,11 +11,13 @@ import { AngularFireAuthModule } from 'angularfire2/auth';
 import { UserComponent } from './user/user.component';
 import { AdminComponent } from './admin/admin.component';
 import { HomepageComponent } from './homepage/homepage.component';
-
 import { AuthGuardService } from './auth-guard.service';
 import { AuthenticationService } from './authentication.service';
+import { ContactComponent } from './contact/contact.component';
+import { ConfirmationComponent } from './confirmation/confirmation.component';
 import { AboutComponent } from './about/about.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
+
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -31,6 +33,8 @@ export const firebaseConfig = {
     UserComponent,
     AdminComponent,
     HomepageComponent,
+    ContactComponent,
+    ConfirmationComponent,
     AboutComponent,
     ProductDetailComponent
   ],
