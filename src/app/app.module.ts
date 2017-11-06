@@ -14,6 +14,8 @@ import { HomepageComponent } from './homepage/homepage.component';
 
 import { AuthGuardService } from './auth-guard.service';
 import { AuthenticationService } from './authentication.service';
+import { AboutComponent } from './about/about.component';
+import { ProductDetailComponent } from './product-detail/product-detail.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -28,7 +30,9 @@ export const firebaseConfig = {
     AppComponent,
     UserComponent,
     AdminComponent,
-    HomepageComponent
+    HomepageComponent,
+    AboutComponent,
+    ProductDetailComponent
   ],
   imports: [
     BrowserModule,
