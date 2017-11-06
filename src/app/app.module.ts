@@ -13,6 +13,7 @@ import { AdminComponent } from './admin/admin.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { AuthGuardService } from './auth-guard.service';
 import { AuthenticationService } from './authentication.service';
+import { CartComponent } from './cart/cart.component';
 import { ContactComponent } from './contact/contact.component';
 import { ConfirmationComponent } from './confirmation/confirmation.component';
 import { AboutComponent } from './about/about.component';
@@ -33,6 +34,7 @@ export const firebaseConfig = {
     UserComponent,
     AdminComponent,
     HomepageComponent,
+    CartComponent,
     ContactComponent,
     ConfirmationComponent,
     AboutComponent,
