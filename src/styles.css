@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef;
+  text-align: center;
+}
