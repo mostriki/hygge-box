@@ -4,29 +4,40 @@
   <meta charset="utf-8">
   <title>Hyggebox</title>
   <base href="/">
-
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 </head>
 <body>
   <app-root>Loading...</app-root>
+
+<div class="content">
+</div>
 </body>
-<footer>
-  <h4><a>Sign up for our newsletter!</a></h4>
-  <h3>400 SW 6th Ave
+
+<footer id="myFooter">
+  <div class="container">
+    <h4><a>Sign up for our newsletter</a></h4>
     <br>
-    Portland, OR 97204
+    <form class="newsletter" action="index.html" method="post">
+      <label for="email">Email:</label>
+      <input type="text" name="newsletter" value="">
+      <button class="btn btn-basic" type="submit" name="button">Add me</button>
+    </form>
     <br>
-    hyggebox.pdx@gmail.com
-  </h3>
-
-  <h3>Find us on social media!<h3>
-     <p><a href="https://instagram.com/hyggeboxpdx" target="_blank"><img border="0" alt="instagram" src="src/assets/img/insta.png" width="auto" height="50"></a></p><p class="contact">Instagram</p></a>
-
-    <p><a href="https://twitter.com/hyggeboxpdx" target="_blank"><img border="0" alt="twitter" src="src/assets/img/twitter.jpg" width="auto" height="50"></a></p><p class="contact">Twitter</p></a>
-
-    <p><a href="https://pinterest.com/hyggeboxdx" target="_blank"><img border="0" alt="pinterest" src="src/assets/img/pin.png" width="auto" height="50"></a></p><p class="contact">Pinterest</p></a>
-
-
+      <!-- <ul>
+          <li><a href="#">Contact us</a></li>
+      </ul> -->
+  <p class="footer-copyright">© 2017 Copyright Karla Buckner, Dawson Mortenson, Riki Montgomery, Sara Spink</p>
+  </div>
+  <div class="footer-social">
+    <h4>Find us on social media</h4>
+    <br>
+      <a href="https://facebook.com/hyggeboxdx" class="social-icons"><i class="fa fa-facebook"></i></a>
+      <a href="https://pinterest.com/hyggeboxdx" class="social-icons"><i class="fa fa-pinterest"></i></a>
+      <a href="https://twitter.com/hyggeboxpdx" class="social-icons"><i class="fa fa-twitter"></i></a>
+      <a href="https://instagram.com/hyggeboxpdx" class="social-icons"><i class="fa fa-instagram"></i></a>
+  </div>
 </footer>
 </html>
