@@ -14,21 +14,26 @@
         <div class="carousel-item">
           <img class="d-block w-100" src="./src/assets/img/product1-img2.jpg" alt="Second slide">
         </div>
-        <div class="oneMonthDetails">
-          <h1>this month's box</h1>
-          <ul>
-            <li>Socks</li>
-            <li>Choco Treats!</li>
-            <li>Really Good coffee or tea</li>
-            <li>Local Honey</li>
-            <li>cute notebook!</li>
-            <a routerLink="box/six-month">I'm interested in a 6 month subscription</a>
-            <a routerLink="box/twelve-month">I'm interested in a  year subscription</a>
-          </ul>
-        </div>
       </div>
     </div>
   </div>
+  <div class="oneMonthDetails">
+    <h1>this month's box</h1>
+    <ul>
+      <li>Socks</li>
+      <li>Choco Treats!</li>
+      <li>Really Good coffee or tea</li>
+      <li>Local Honey</li>
+      <li>cute notebook!</li>
+      <a href="/box/six-month">I'm interested in a 6 month subscription</a>
+      <br>
+      <a href="/box/twelve-month">I'm interested in a  year subscription</a>
+    </ul>
+    <div class="purchaseButton">
+      <button class="btn btn-info">Purchase!</button>
+    </div>
+  </div>
+
 </div>
 
 <div *ngIf="currentRoute === '/box/six-month'" class="sixMonth" >
@@ -45,22 +50,26 @@
         <div class="carousel-item">
           <img class="d-block w-100" src="./src/assets/img/test-image4.jpeg" alt="Second slide">
         </div>
-        <div class="sixMonthSubscription">
-          <h1>six month Subscription</h1>
-          <ul>
-            <li>Socks</li>
-            <li>Choco Treats!</li>
-            <li>Really Good coffee or tea</li>
-            <li>Local Honey</li>
-            <li>cute notebook!</li>
-          </ul>
-          <a routerLink="box/one-month">I'm interested in this months box</a>
-          <a routerLink="box/twelve-month">I'm interested in a  year subscription</a>
-          <button type="button" name="button"></button>
-        </div>
       </div>
     </div>
   </div>
+  <div class="sixMonthDetails">
+    <h1>six month Subscription</h1>
+    <ul>
+      <li>Socks</li>
+      <li>Choco Treats!</li>
+      <li>Really Good coffee or tea</li>
+      <li>Local Honey</li>
+      <li>cute notebook!</li>
+    </ul>
+    <a href="box/one-month">I'm interested in this months box</a>
+    <br>
+    <a href="box/twelve-month">I'm interested in a  year subscription</a>
+    <div class="purchaseButton">
+      <button class="btn btn-info">Purchase!</button>
+    </div>
+  </div>
+
 </div>
 
 <div *ngIf="currentRoute === '/box/twelve-month'" class="year">
@@ -77,19 +86,23 @@
         <div class="carousel-item">
           <img class="d-block w-100" src="./src/assets/img/test-image6.jpeg" alt="Second slide">
         </div>
-        <div class="oneYearDetails">
-          <h1>Twelve Month box</h1>
-          <ul>
-            <li>Socks</li>
-            <li>Choco Treats!</li>
-            <li>Really Good coffee or tea</li>
-            <li>Local Honey</li>
-            <li>cute notebook!</li>
-          </ul>
-          <a routerLink="box/six-month">I'm interested in a 6 month subscription</a>
-          <a routerLink="box/one-month">I'm interested in a  one month</a>
-        </div>
       </div>
+    </div>
+  </div>
+  <div class="twelveMonthDetails">
+    <h1>Twelve Month box</h1>
+    <ul>
+      <li>Socks</li>
+      <li>Choco Treats!</li>
+      <li>Really Good coffee or tea</li>
+      <li>Local Honey</li>
+      <li>cute notebook!</li>
+    </ul>
+    <a href="box/six-month">I'm interested in a 6 month subscription</a>
+    <br>
+    <a href="box/one-month">I'm interested in a  one month</a>
+    <div class="purchaseButton">
+      <button class="btn btn-info">Purchase!</button>
     </div>
   </div>
 </div>
