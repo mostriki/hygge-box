@@ -24,7 +24,7 @@
       <div class="card border-0" style="width: 20rem;">
         <div class="card-body">
           <h4 class="card-title">Email:</h4>
-          <p class="card-text"><a href="#" class="card-link">hyggebox.pdx@gmail.com</a></p>
+          <p class="card-text"><a href="mailto:hyggebox.pdx@gmail.com" class="card-link">hyggebox.pdx@gmail.com</a></p>
         </div>
       </div>
     </div>
@@ -38,7 +38,7 @@
     <div class="form-row">
       <div class="form-group col-md-6">
         <label for="inputName">Name</label>
-        <input type="email" class="form-control" id="inputName" placeholder="Name">
+        <input type="email" class="form-control" id="inputName" placeholder="Name" required>
       </div>
       <div class="form-group col-md-6">
         <label for="inputCompany">Company</label>
@@ -48,7 +48,7 @@
     <div class="form-row">
       <div class="form-group col-md-6">
         <label for="inputEmail">Email</label>
-        <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+        <input type="email" class="form-control" id="inputEmail" placeholder="Email" required>
       </div>
       <div class="form-group col-md-6">
         <label for="inputPhoneNumber">Phone Number</label>
@@ -57,9 +57,9 @@
     </div>
     <div class="form-group">
       <label for="inputMessage">Message</label>
-      <textarea class="form-control" id="inputMessage" rows="4"></textarea>
+      <textarea class="form-control" id="inputMessage" rows="4" required></textarea>
     </div>
-    <button class="btn btn-primary" type="submit">Button</button>
+    <button class="btn btn-primary" type="submit" disabled> Disabled Submit</button>
   </form>
 
 <!-- container -->
