@@ -1,6 +1,11 @@
 <!-- <div class="parallax"></div> -->
+<div>
+  <h3>{{(boxToDisplay | async).name}}</h3>
+  <h4>{{(boxToDisplay | async).boxContents}}</h4>
+  <p>{{(boxToDisplay | async).price}}</p>
+</div>
 
-<div *ngIf="currentRoute === '/box/one-month'" class="oneMonth" >
+<!-- <div *ngIf="currentRoute === '/box/one-month'" class="oneMonth" >
   <div class="row" style="height:1000px;font-size:36px">
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
@@ -18,17 +23,16 @@
     </div>
   </div>
   <div class="oneMonthDetails">
-    <h1>this month's box</h1>
-    <ul>
-      <li>Socks</li>
-      <li>Choco Treats!</li>
-      <li>Really Good coffee or tea</li>
-      <li>Local Honey</li>
-      <li>cute notebook!</li>
+    <h1>Current Month's Box</h1>
+    <div class="card">
+    <div class="card-body">
+
+    </div>
+  </div>
       <a href="/box/six-month">I'm interested in a 6 month subscription</a>
       <br>
       <a href="/box/twelve-month">I'm interested in a  year subscription</a>
-    </ul>
+
     <div class="purchaseButton">
       <button class="btn btn-info">Purchase!</button>
     </div>
@@ -105,4 +109,4 @@
       <button class="btn btn-info">Purchase!</button>
     </div>
   </div>
-</div>
+</div> -->

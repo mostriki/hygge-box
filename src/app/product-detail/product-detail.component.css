@@ -9,3 +9,8 @@
 .twelveMonthDetails {
   padding-left: 100px;
 }
+
+ul
+{
+list-style-type: none;
+}
