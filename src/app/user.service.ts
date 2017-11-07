@@ -14,10 +14,11 @@ export class UserService {
     return this.database.object('/users/' + userId);
   }
 
-  addUserById(userId: string){
-    const newUser = this.database.object(`/users/` + userId);
+  addUserById(name: string, uid: string, email: string){
+    const newUser = this.database.object(`/users/` + uid);
     newUser.set({
-      "Name": "bob"
+      "name": name,
+      "email": email
     });
   }
 }
