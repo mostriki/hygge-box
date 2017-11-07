@@ -1,0 +1,16 @@
+{ "boxes": [{
+    "name": "One and Done",
+    "price": 35,
+    "boxContents": ["Bee Local Smoked Honey", "Jacobsen Cherry Wood Salt", "Wool socks", "Spella Coffee Guatemala Blend", "Candle", "Notebook for your thoughts"]
+    }, {
+    "name": "Six Months of Bliss",
+    "monthsRemaining": 5,
+    "price": 210,
+    "boxContents": ["Food item", "Pair of cozy socks", "Coffee and/or tea", "Self care personal product", "Candle or other aromatherapy item"]
+      }, {
+    "name": "A Year of Cozy",
+    "monthsRemaining": 11,
+    "price": 420,
+    "boxContents": ["Food item", "Pair of cozy socks", "Coffee and/or tea", "Self care personal product", "Candle or other aromatherapy item"]
+  }]
+}
