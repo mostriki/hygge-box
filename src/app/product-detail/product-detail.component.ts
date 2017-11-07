@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-product-detail',
@@ -6,10 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./product-detail.component.css']
 })
 export class ProductDetailComponent implements OnInit {
+  currentRoute: string = this.router.url;
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
+    console.log(this.router.url)
   }
 
 }

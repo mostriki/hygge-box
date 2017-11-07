@@ -1,5 +1,16 @@
 <div class="parallax"></div>
 
+<div *ngIf="currentRoute === '/box/one-month'" class="oneMonth" >
+  <p>you clicked a one month box</p>
+</div>
+
+<div *ngIf="currentRoute === '/box/six-month'" class="sixMonth" >
+  <p>you clicked a SIX month box</p>
+</div>
+
+<div *ngIf="currentRoute === '/box/twelve-month'" class="year">
+  <p>Give me 540 dollars!</p>
+</div>
 
   <div class="row" style="height:1000px;font-size:36px">
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
