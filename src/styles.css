@@ -85,7 +85,6 @@
 }
 
 
-
 /* CSS used for positioning the footers at the bottom of the page. */
 /* You can remove this. */
 
@@ -110,4 +109,9 @@ body{
 #myFooter{
    flex: 0 0 auto;
    -webkit-flex: 0 0 auto;
+}
+
+/* Cart Page Styling*/
+.cartpage {
+  padding: 15px;
 }
