@@ -9,3 +9,10 @@
 .twelveMonthDetails {
   padding-left: 100px;
 }
+
+.carousel {
+  z-index: -99;
+  height: 100%;
+  width: 100%;
+  
+}
