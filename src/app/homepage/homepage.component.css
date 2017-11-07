@@ -13,7 +13,6 @@ figcaption {
     bottom: 0;
     left: 0;
     right: 0;
-
 }
 
 img {
@@ -34,3 +33,17 @@ img {
   padding: 1em;
   display: block;
 }
+
+#parallaxHomepage {
+     /* The image used */
+     background-image: url('./../../assets/img/product-detail-img.jpg');
+
+     /* Full height */
+     height: 100%;
+
+     /* Create the parallax scrolling effect */
+     background-attachment: fixed;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+ }
