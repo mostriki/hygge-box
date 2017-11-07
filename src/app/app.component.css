@@ -1,3 +1,11 @@
 .bg-secondary {
   background-color: #6A1B9A !important;
 }
+
+.navbar-light .navbar-toggler {
+  border-color: transparent !important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: #000;
+}
