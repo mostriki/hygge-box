@@ -1,5 +1,6 @@
 <div class="cartpage">
-<h1>Your cart</h1>
+<h1>Product: {{(user | async)?.cart.name}}</h1>
+<h1>Price: ${{(user | async)?.cart.price}}.00</h1>
 <!-- Boxes in the cart and the total price-->
 <h2>Shipping Address</h2>
 <h4>Please enter a shipping address</h4>
