@@ -7,7 +7,7 @@ import { Router } from '@angular/router';
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
-  providers: [AuthenticationService]
+  providers: [AuthenticationService, UserService]
 })
 export class AppComponent {
   title = 'Hygge Box';
