@@ -16,32 +16,36 @@ import { UserService } from '../user.service';
   providers: [AuthenticationService, UserService, ProductDetailService]
 })
 export class ProductDetailComponent implements OnInit {
-  currentRoute: string = this.router.url;
+  private currentRoute: string = this.router.url;
   private uid: string;
-  boxId: string;
+  private boxId: string;
+  private isLoggedIn: boolean;
   boxToDisplay;
+  boxContents;
 
   constructor(
-  public authService: AuthenticationService,
-  public userService: UserService,
-  private route: ActivatedRoute,
-  private location: Location,
-  private productDetailService: ProductDetailService,
-  private router: Router) {
-    this.authService.user.subscribe(user => {
-        if (user == null) {
-        } else {
-          this.uid = user.uid;
-        }
-      });
+    public authService: AuthenticationService,
+    public userService: UserService,
+    private route: ActivatedRoute,
+    private location: Location,
+    private productDetailService: ProductDetailService,
+    private router: Router) {
+      this.authService.user.subscribe(user => {
+          if (user == null) {
+            this.isLoggedIn = false;
+          } else {
+            this.isLoggedIn = true;
+            this.uid = user.uid;
+          }
+        });
     }
-
 
   ngOnInit() {
     this.route.params.forEach((urlParameters) => {
       this.boxId = urlParameters['id'];
   });
   this.boxToDisplay = this.productDetailService.getBoxById(this.boxId);
+  this.boxContents = this.boxToDisplay.boxContents;
   }
 
 

@@ -4,5 +4,6 @@ export class ProductDetail  {
     public name: string,
     public monthsRemaining: number,
     public price: number,
+    public imgs: string[]
   ) {}
 }
