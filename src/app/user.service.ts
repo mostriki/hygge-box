@@ -5,6 +5,7 @@ import { AngularFireDatabase, FirebaseListObservable } from 'angularfire2/databa
 @Injectable()
 export class UserService {
   users: FirebaseListObservable<any[]>;
+  orders: FirebaseListObservable<any[]>
 
   constructor(private database: AngularFireDatabase) {
     this.users = database.list('users');
@@ -31,12 +32,8 @@ export class UserService {
     })
   }
   addToUserOrder(shippingFName, shippingLName, shippingStreet, shippingStreet2, shippingCity, shippingState, shippingZip, cardNumber, cardExp, cardCVV, billingFName, billingLName, billingStreet, billingStreet2, billingCity, billingState, billingZip, promo, giftMessage, uid) {
-    const newOrder = this.database.object('/users/'+ uid + '/orders');
-    console.log(shippingFName);
+    const newOrder = this.database.object('/users/'+ uid + '/cart/info');
     newOrder.set({
-      // "name": boxName,
-      // "price": boxPrice,
-      // "length": boxDuration,
       "shippingFName": shippingFName,
       "shippingLName": shippingLName,
       "shippingStreet": shippingStreet,
