@@ -2,7 +2,7 @@
   <div class="row">
     <div class="col-12">
       <div class="card">
-        <img class="card-img-top" src="{{boxToDisplay?.imgs[0]}}" alt="Card image cap">
+        <img class="card-img-top" src="{{boxToDisplay?.img}}" alt="Card image cap">
         <div class="card-body">
           <h4 class="card-title">{{boxToDisplay?.name}}</h4>
           <h5>Items in Box:</h5>
@@ -10,7 +10,7 @@
             <li *ngFor="let item of boxToDisplay?.boxContents">{{item}}</li>
           </ol>
           <p>{{boxToDisplay?.price}}</p>
-          <a class="btn btn-primary" (click)="addToCart(boxToDisplay?.name, boxToDisplay?.price, boxToDisplay?.monthsRemaining)">Go somewhere</a>
+          <button class="btn btn-basic" (click)="addToCart(boxToDisplay?.name, boxToDisplay?.price, boxToDisplay?.monthsRemaining)">Add to Cart</button>
         </div>
       </div>
     </div>
