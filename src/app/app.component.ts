@@ -45,4 +45,8 @@ export class AppComponent {
     this.authService.logout();
     this.router.navigate(['']);
   }
+
+  goToNewsletterConfirmation() {
+    this.router.navigate(['newsletter-confirmation']);
+  }
 }
