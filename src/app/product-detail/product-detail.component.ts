@@ -48,7 +48,7 @@ export class ProductDetailComponent implements OnInit {
                                         dataLastEmittedFromObserver.name,
                                         dataLastEmittedFromObserver.monthsRemaining,
                                         dataLastEmittedFromObserver.price,
-                                        dataLastEmittedFromObserver.imgs)
+                                        dataLastEmittedFromObserver.img)
    })
   }
 
