@@ -15,12 +15,13 @@
       <h2>OUR PRODUCTS</h2>
       </div>
 
-
+<div class="container">
   <div *ngFor="let box of boxes | async" class="panel panel-default">
     <div class="panel-body">
       <h3 (click)="goToDetailPage(box)"><em>{{box.name}}</em></h3>
     </div>
   </div>
+</div>
 
       <!-- <div class="row">
         <div class="col-md-4">

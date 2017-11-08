@@ -1,11 +1,8 @@
-
-
-
 /* CSS used for positioning the footers at the bottom of the page. */
 /* You can remove this. */
 
 html{
-    height: 100%;
+  height: 100%;
 }
 
 body{
@@ -14,7 +11,8 @@ body{
     flex-direction: column;
     -webkit-flex-direction: column;*/
     height: 100%;
-}
+    font-family: 'Economica', sans-serif !important;
+  }
 
 .content{
    flex: 1 0 auto;

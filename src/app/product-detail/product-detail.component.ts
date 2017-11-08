@@ -48,6 +48,8 @@ export class ProductDetailComponent implements OnInit {
   this.boxContents = this.boxToDisplay.boxContents;
   }
 
+
+
   addToCart(boxName: string, boxPrice: number, boxLength: number) {
     this.userService.addToUserCart(boxName, boxPrice, boxLength, this.uid);
     this.router.navigate(['cart']);
