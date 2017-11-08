@@ -1,4 +1,4 @@
-export class ProductDetails {
+export class ProductDetail  {
   public boxContents: any = [];
   constructor(
     public name: string,

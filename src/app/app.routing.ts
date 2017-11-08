@@ -28,7 +28,7 @@ const appRoutes: Routes = [
     component: AboutComponent
   },
   {
-    path: 'box/:something',
+    path: 'boxes/:id',
     component: ProductDetailComponent
   },
   {
