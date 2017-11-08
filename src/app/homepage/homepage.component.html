@@ -5,9 +5,22 @@
 <div class="container">
   <br>
   <br>
-  <div class="about">
-    <h2>WELCOME</h2>
-    <p>Hygge (pronounced hue-guh not hoo-gah) is a Danish word used when acknowledging a feeling or moment, whether alone or with friends, at home or out, ordinary or extraordinary as cosy, charming or special. <em>Welcome to HyggeBox</em>, the world's coziest subscription service! Founded in 2017 by cool-girl Veronica maybe-Montgomery? It's great and you should subscribe! We have 3 options for purchasing, one time 6 month 12 month. More info etc!</p>
+
+  <div id="hyggeDefinition">
+    <br>
+    <div class="row justify-content-md-center">
+      <div class="col-sm-10">
+        <p id="welcome">Welcome to HyggeBox, the world's coziest subscription service! Founded in 2017 by Veronica Messinger. It's great and you should subscribe! We have 3 options for purchasing, one time 6 month 12 month. More info etc!</p>
+      </div>
+    </div>
+
+    <br>
+    <hr>
+    <div class="row justify-content-md-center">
+      <div class="col-sm-6">
+        <p><span id="hyggeDefinitionTitle">Hygge</span><br />[hoo-gah] noun <br /><br />1. is a word used when acknowledging a feeling or moment, whether alone or with friends, at home or out, ordinary or extraordinary as cosy, charming or special.</p>
+      </div>
+    </div>
   </div>
   <br>
   <hr>
@@ -15,42 +28,13 @@
   <div class="products">
     <div class="row">
       <h2>OUR PRODUCTS</h2>
-      </div>
-
-<div class="container">
-  <div *ngFor="let box of boxes | async" class="panel panel-default">
-    <div class="panel-body">
-      <h3 (click)="goToDetailPage(box)"><em>{{box.name}}</em></h3>
     </div>
-  </div>
-</div>
-
-      <!-- <div class="row">
-        <div class="col-md-4">
-          <figure>
-            <a routerLink="box/:id">
-             <img src="http://placehold.it/500x500?text=Photo of This Month Box">
-             <figcaption>This Month's Box ❤ ❤ ❤ ❤ ❤</figcaption>
-            </a>
-          </figure>
+    <div class="container">
+      <div *ngFor="let box of boxes | async" class="panel panel-default">
+        <div class="panel-body">
+          <h3 (click)="goToDetailPage(box)"><em>{{box.name}}</em></h3>
         </div>
-        <div class="col-md-4">
-          <figure>
-            <a routerLink="box/:id">
-             <img src="http://placehold.it/500x500?text=Photo of 6 Month Box">
-             <figcaption>6 Month Subscription ❤ ❤ ❤ ❤ ❤</figcaption>
-            </a>
-          </figure>
-        </div>
-        <div class="col-md-4">
-          <figure>
-            <a routerLink="box/:id">
-             <img src="http://placehold.it/500x500?text=Photo of Year Box">
-             <figcaption>Year Subscription ❤ ❤ ❤ ❤ ❤</figcaption>
-           </a>
-          </figure>
-        </div>
-      </div> -->
-
+      </div>
+    </div>
   </div>
 </div>
