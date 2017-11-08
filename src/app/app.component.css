@@ -10,6 +10,10 @@
   color: #000;
 }
 
+.navbar-fixed-top {
+  position: absolute;
+}
+
 #myFooter{
     padding-top:32px;
 }
