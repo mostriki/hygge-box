@@ -54,4 +54,10 @@ export class UserService {
       "giftMessage": giftMessage
     })
   }
+  confirmOrder(userId, cart){
+    const order = this.database.list('/users/' + userId + '/orders');
+    order.push({
+      cart
+    })
+  }
 }

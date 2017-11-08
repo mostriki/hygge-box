@@ -13,9 +13,9 @@ import { UserDetails } from '../user-details.model';
 export class ConfirmationComponent implements OnInit {
   public user: any;
   private uid: string;
-  cart;
+  cartInfo;
   fire_uid;
-  orders;
+  cart;
 
   constructor(public authService: AuthenticationService, public userService: UserService, private router: Router) {
     this.authService.user.subscribe(user => {
@@ -28,9 +28,15 @@ export class ConfirmationComponent implements OnInit {
 
   ngOnInit() {
     this.userService.getUserById(this.uid).subscribe(dataLastEmittedFromObserver => {
+      this.cartInfo = dataLastEmittedFromObserver.cart.info;
       this.cart = dataLastEmittedFromObserver.cart;
       this.fire_uid = this.uid
-      this.orders = dataLastEmittedFromObserver.orders
      })
+  }
+
+  confirm() {
+    this.userService.confirmOrder(this.fire_uid, this.cart);
+    alert("Thank you for your order. Check your email for a receipt.")
+    this.router.navigate([''])
   }
 }
