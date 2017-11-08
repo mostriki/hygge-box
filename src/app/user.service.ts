@@ -21,4 +21,13 @@ export class UserService {
       "email": email
     });
   }
+
+  addToUserCart(boxName: string, boxPrice: number, boxLength: number, uid: string) {
+    const newBox = this.database.object('/users/'+ uid + '/cart');
+    newBox.set({
+      "name": boxName,
+      "price": boxPrice,
+      "length": boxLength
+    })
+  }
 }
