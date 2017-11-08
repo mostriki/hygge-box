@@ -14,9 +14,18 @@
   position: absolute;
 }
 
+#navButton {
+  float: right;
+}
+
+#navbar {
+  width: 100%;
+  padding: 25px;
+}
+
 #myFooter{
     padding-top:32px;
-    position: fixed;
+    position: relative;
     left: 0;
     bottom: 0;
     width: 100%;

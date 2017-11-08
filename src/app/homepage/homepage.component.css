@@ -1,4 +1,4 @@
-figure {
+/*figure {
     margin: 0;
     border: 1px solid black;
     position: relative;
@@ -13,9 +13,9 @@ figcaption {
     bottom: 0;
     left: 0;
     right: 0;
-}
+}*/
 
-img {
+#coverImage {
     display: block;
     width: 100%;
     height: auto;

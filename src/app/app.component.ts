@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
   providers: [AuthenticationService, UserService]
 })
 export class AppComponent {
-  title = 'Hygge Box';
+  title = 'HyggeBox';
   user;
   private uid: string;
   private isLoggedIn: boolean;
