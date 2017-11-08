@@ -20,8 +20,7 @@ export class ProductDetailComponent implements OnInit {
   private uid: string;
   private boxId: string;
   private isLoggedIn: boolean;
-  boxToDisplay;
-  boxContents;
+  boxToDisplay: ProductDetail;
 
   constructor(
     public authService: AuthenticationService,
@@ -44,8 +43,13 @@ export class ProductDetailComponent implements OnInit {
     this.route.params.forEach((urlParameters) => {
       this.boxId = urlParameters['id'];
   });
-  this.boxToDisplay = this.productDetailService.getBoxById(this.boxId);
-  this.boxContents = this.boxToDisplay.boxContents;
+  this.productDetailService.getBoxById(this.boxId).subscribe(dataLastEmittedFromObserver => {
+     this.boxToDisplay = new ProductDetail(dataLastEmittedFromObserver.boxContents,
+                                        dataLastEmittedFromObserver.name,
+                                        dataLastEmittedFromObserver.monthsRemaining,
+                                        dataLastEmittedFromObserver.price,
+                                        dataLastEmittedFromObserver.imgs)
+   })
   }
 
 

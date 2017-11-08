@@ -1,6 +1,6 @@
 export class ProductDetail  {
-  public boxContents: any = [];
   constructor(
+    public boxContents: string[],
     public name: string,
     public monthsRemaining: number,
     public price: number,
