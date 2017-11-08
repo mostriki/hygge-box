@@ -1,11 +1,20 @@
-
-<!-- <div class="parallax"></div> -->
-<div>
-  <h3>{{(boxToDisplay | async)?.name}}</h3>
-  <h4>{{(boxToDisplay | async)?.boxContents}}</h4>
-  <p>{{(boxToDisplay | async)?.price}}</p>
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <div class="card">
+        <img class="card-img-top" src="{{(boxToDisplay | async)?.imgs[0]}}" alt="Card image cap">
+        <div class="card-body">
+          <h4 class="card-title">{{(boxToDisplay | async)?.name}}</h4>
+          <ul>
+            <li>{{(boxToDisplay | async)?.boxContents}}</li>
+          </ul>
+          <p>{{(boxToDisplay | async)?.price}}</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
-
 <!-- <div *ngIf="currentRoute === '/box/one-month'" class="oneMonth" >
 
 <div *ngIf="currentRoute === '/box/one-month'" class="oneMonth" >
