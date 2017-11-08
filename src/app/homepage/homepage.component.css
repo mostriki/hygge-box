@@ -1,36 +1,27 @@
-/*figure {
-    margin: 0;
-    border: 1px solid black;
-    position: relative;
-}
-
-figcaption {
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #ffffff;
-    font-size: 1.2em;
-    padding: 10px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}*/
-
 #coverImage {
     display: block;
     width: 100%;
     height: auto;
 }
 
-
-.about {
+#hyggeDefinition h2{
   text-align: center;
+  display: block;
+  font-weight: 600;
+  font-size: 42px;
+}
+
+#hyggeDefinition p {
   display: block;
   width: 100%;
   height: auto;
 }
 
-/* TODO: I commented this out because it was creating a weird border around my image. */
-/*:host {
-  padding: 1em;
-  display: block;
-}*/
+#hyggeDefinitionTitle {
+  font-size: 24px;
+}
+
+#hyggeDefinition #welcome {
+  font-size: 24px;
+  text-align: center;
+}
