@@ -4,90 +4,97 @@
 <!-- Boxes in the cart and the total price-->
 <h2>Shipping Address</h2>
 <h4>Please enter a shipping address</h4>
-<form class="form-group" action="index.html" method="post">
-    <div class="col-xs-3">
-  <label for="first">First Name:</label>
-  <input class="form-control" type="text" name="first" value="">
-  <br>
-  <label for="last">Last Name:</label>
-  <input class="form-control" type="text" name="last" value="">
-  <br>
-  <label for="street">Street Address:</label>
-  <input class="form-control" type="text" name="street" value="">
-  <br>
-  <label for="address">Address 2:</label>
-  <input class="form-control" type="text" placeholder="Apt, Suite or Building Number" name="street2" value="">
-  <br>
-  <label for="city">City:</label>
-  <input class="form-control" type="text" name="city" value="">
-  <br>
-  <label for="state">State:</label>
-  <input class="form-control" type="text" name="state" value="">
-  <br>
-  <label for="zipcode">Zip Code:</label>
-  <input class="form-control" type="text" name="street" value="">
-</div>
-</form>
+  <div class="form-group">
+    <label for="first">First Name:</label>
+    <input class="form-control" type="text" name="first" #shippingFName required>
+  </div>
+  <div class="form-group">
+    <label for="last">Last Name:</label>
+    <input class="form-control" type="text" name="last" #shippingLName required>
+  </div>
+  <div class="form-group">
+    <label for="street">Street Address:</label>
+    <input class="form-control" type="text" name="street" #shippingStreet required>
+  </div>
+  <div class="form-group">
+    <label for="address">Address 2:</label>
+    <input class="form-control" type="text" placeholder="Apt, Suite or Building Number" name="street2" #shippingStreet2 required>
+  </div>
+  <div class="form-group">
+    <label for="city">City:</label>
+    <input class="form-control" type="text" name="city" #shippingCity required>
+  </div>
+  <div class="form-group">
+    <label for="state">State:</label>
+    <input class="form-control" type="text" name="state" #shippingState required>
+  </div>
+  <div class="form-group">
+    <label for="zipcode">Zip Code:</label>
+    <input class="form-control" type="text" name="street" #shippingZip required>
+  </div>
 
 <h2>Billing</h2>
 <h4>Please enter your billing information</h4>
-<form class="form-group" action="index.html" method="post">
-   <div class="col-xs-3">
+<div class="form-group">
   <label for="cardnumber">Card Number:</label>
-  <input class="form-control" type="text" name="first" value="">
-  <br>
-  <label for="last">Expiration Date:</label>
-  <input class="form-control" type="text" name="last" value="">
-  <br>
-  <label for="street">CVV:</label>
-  <input class="form-control" type="text" name="street" value="">
-<br>
-  <h5>Billing Address</h5>
-  <input type="checkbox" name="billaddress" value="same"> Same as shipping<br>
-  <br>
-  <label for="first">First Name:</label>
-  <input class="form-control" type="text" name="first" value="">
-  <br>
-  <label for="last">Last Name:</label>
-  <input class="form-control" type="text" name="last" value="">
-  <br>
-  <label for="street">Street Address:</label>
-  <input class="form-control" type="text" name="street" value="">
-  <br>
-  <label for="address">Address 2:</label>
-  <input class="form-control" type="text"  placeholder="Apt, Suite or Building Number" name="street2" value="">
-  <br>
-  <label for="city">City:</label>
-  <input class="form-control" type="text" name="city" value="">
-  <br>
-  <label for="state">State:</label>
-  <input class="form-control" type="text" name="state" value="">
-  <br>
-  <label for="zipcode">Zip Code:</label>
-  <input class="form-control" type="text" name="street" value="">
+  <input class="form-control" type="text" name="first" #cardNumber required>
 </div>
-</form>
+<div class="form-group">
+  <label for="last">Expiration Date:</label>
+  <input class="form-control" type="text" name="last" #cardExp required>
+</div>
+<div class="form-group">
+  <label for="street">CVV:</label>
+  <input class="form-control" type="text" name="street" #cardCVV required>
+</div>
+
+<h5>Billing Address</h5>
+<div class="form-group">
+  <label for="first">First Name:</label>
+  <input class="form-control" type="text" name="first" #billingFName required>
+</div>
+<div class="form-group">
+  <label for="last">Last Name:</label>
+  <input class="form-control" type="text" name="last" #billingLName required>
+</div>
+<div class="form-group">
+  <label for="street">Street Address:</label>
+  <input class="form-control" type="text" name="street" #billingStreet required>
+</div>
+<div class="form-group">
+  <label for="address">Address 2:</label>
+  <input class="form-control" type="text"  placeholder="Apt, Suite or Building Number" name="street2" #billingStreet2 required>
+</div>
+<div class="form-group">
+  <label for="city">City:</label>
+  <input class="form-control" type="text" name="city" #billingCity required>
+</div>
+<div class="form-group">
+  <label for="state">State:</label>
+  <input class="form-control" type="text" name="state" #billingState required>
+</div>
+<div class="form-group">
+  <label for="zipcode">Zip Code:</label>
+  <input class="form-control" type="text" name="street" #billingZip required>
+</div>
 
 <h3>Promo code:</h3>
-<form class="form-group" action="index.html" method="post">
-   <div class="col-xs-3">
+<div class="form-group">
   <label for="promo">Discount Code:</label>
-  <input class="form-control" type="text" name="first" value="">
-  <br>
-  <br>
-<h3>Is this a gift?</h3>
+  <input class="form-control" type="text" name="first" #promo required>
+</div>
 
+<h3>Is this a gift?</h3>
+<div class="form-group">
   <input type="radio" name="gift" value="yes"> Yes<br>
   <input type="radio" name="gift" value="no"> No<br>
-  <br>
+</div>
+<div class="form-group">
   <label for="message">Enter a gift message:</label>
-  <input class="form-control" type="text" name="message" value="">
-<br>
+  <input class="form-control" type="text" name="message" #giftMessage>
+</div>
 <br>
 <button class="btn btn-basic" type="button" name="button">Checkout</button>
 <br>
 <br>
 <h6>You will get to review your order next</h6>
-  </div>
-</form>
-</div>
