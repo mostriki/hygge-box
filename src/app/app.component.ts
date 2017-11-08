@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { AuthenticationService } from './authentication.service';
 import { UserService } from './user.service';
 import { Router } from '@angular/router';
@@ -16,6 +16,7 @@ export class AppComponent {
   private isLoggedIn: boolean;
   private userName: string;
   private email: string;
+  private currentRoute: string = this.router.url;
 
   constructor(public authService: AuthenticationService, public userService: UserService, private router: Router) {
     this.authService.user.subscribe(user => {
@@ -44,5 +45,9 @@ export class AppComponent {
   logout() {
     this.authService.logout();
     this.router.navigate(['']);
+  }
+
+  goToNewsletterConfirmation() {
+    this.router.navigate(['newsletter-confirmation']);
   }
 }

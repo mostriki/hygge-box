@@ -1,0 +1,10 @@
+#coverImage {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+#signUpThanks {
+  font-size: 24px;
+  text-align: center;
+}
