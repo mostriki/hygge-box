@@ -9,6 +9,7 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { ContactComponent } from './contact/contact.component';
 import { ConfirmationComponent } from './confirmation/confirmation.component';
 import { CartComponent } from './cart/cart.component';
+import { NewsletterConfirmComponent } from './newsletter-confirm/newsletter-confirm.component';
 
 const appRoutes: Routes = [
   {
@@ -22,6 +23,10 @@ const appRoutes: Routes = [
   {
     path: 'confirmation',
     component: ConfirmationComponent
+   },
+   {
+     path: 'newsletter-confirmation',
+     component: NewsletterConfirmComponent
    },
   {
     path: 'about',

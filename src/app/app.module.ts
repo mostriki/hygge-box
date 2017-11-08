@@ -18,6 +18,7 @@ import { ContactComponent } from './contact/contact.component';
 import { ConfirmationComponent } from './confirmation/confirmation.component';
 import { AboutComponent } from './about/about.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
+import { NewsletterConfirmComponent } from './newsletter-confirm/newsletter-confirm.component';
 
 
 export const firebaseConfig = {
@@ -38,7 +39,8 @@ export const firebaseConfig = {
     ContactComponent,
     ConfirmationComponent,
     AboutComponent,
-    ProductDetailComponent
+    ProductDetailComponent,
+    NewsletterConfirmComponent
   ],
   imports: [
     BrowserModule,
