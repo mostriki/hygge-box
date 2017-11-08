@@ -12,6 +12,11 @@
 
 #myFooter{
     padding-top:32px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
 }
 
 #myFooter .container{

@@ -44,6 +44,8 @@ export class ProductDetailComponent implements OnInit {
   this.boxToDisplay = this.productDetailService.getBoxById(this.boxId);
   }
 
+
+
   addToCart(boxName: string, boxPrice: number, boxLength: number) {
     this.userService.addToUserCart(boxName, boxPrice, boxLength, this.uid);
     this.router.navigate(['cart']);
