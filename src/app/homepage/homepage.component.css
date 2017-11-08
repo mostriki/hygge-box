@@ -29,3 +29,11 @@
 img {
   width: 300px;
 }
+
+.card {
+  border: none;
+}
+
+#cent {
+  text-align: center;
+}

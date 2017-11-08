@@ -10,7 +10,7 @@
             <li *ngFor="let item of boxToDisplay?.boxContents">{{item}}</li>
           </ol>
           <p>{{boxToDisplay?.price}}</p>
-          <a class="btn btn-primary" (click)="addToCart(boxToDisplay?.name, boxToDisplay?.price, boxToDisplay?.monthsRemaining)">Go somewhere</a>
+          <button class="btn btn-basic" (click)="addToCart(boxToDisplay?.name, boxToDisplay?.price, boxToDisplay?.monthsRemaining)">Add to Cart</button>
         </div>
       </div>
     </div>
