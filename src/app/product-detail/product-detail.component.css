@@ -10,12 +10,11 @@
   padding-left: 100px;
 }
 
-ul
-{
-list-style-type: none;
-
-.carousel {
+ul {
+  list-style-type: none;
+}
+/*.carousel {
   z-index: -99;
   height: 100%;
   width: 100%;
- }
+ }*/

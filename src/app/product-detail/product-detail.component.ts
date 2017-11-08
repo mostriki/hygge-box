@@ -13,10 +13,6 @@ import { UserService } from '../user.service';
   selector: 'app-product-detail',
   templateUrl: './product-detail.component.html',
   styleUrls: ['./product-detail.component.css'],
-})
-
-
-
   providers: [AuthenticationService, UserService, ProductDetailService]
 })
 export class ProductDetailComponent implements OnInit {
@@ -26,8 +22,8 @@ export class ProductDetailComponent implements OnInit {
   boxToDisplay;
 
   constructor(
-  public authService: AuthenticationService, 
-  public userService: UserService, 
+  public authService: AuthenticationService,
+  public userService: UserService,
   private route: ActivatedRoute,
   private location: Location,
   private productDetailService: ProductDetailService,
