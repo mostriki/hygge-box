@@ -1,9 +1,5 @@
 <div class="welcomepage">
-  <h2>Hygge Box Logo</h2>
-  <figure>
-     <img src="http://placehold.it/1500x500?text=Photo of Box goes here">
-     <figcaption>Buy a rad hyggebox ❤ ❤ ❤ ❤ ❤</figcaption>
-  </figure>
+  <div id="parallaxAbout"></div>
   <br>
   <hr>
   <br>
@@ -20,10 +16,16 @@
       </div>
 
 
-      <div class="row">
+  <div *ngFor="let box of boxes | async" class="panel panel-default">
+    <div class="panel-body">
+      <h3 (click)="goToDetailPage(box)"><em>{{box.name}}</em></h3>
+    </div>
+  </div>
+
+      <!-- <div class="row">
         <div class="col-md-4">
           <figure>
-            <a routerLink="box/one-month">
+            <a routerLink="box/:id">
              <img src="http://placehold.it/500x500?text=Photo of This Month Box">
              <figcaption>This Month's Box ❤ ❤ ❤ ❤ ❤</figcaption>
             </a>
@@ -31,7 +33,7 @@
         </div>
         <div class="col-md-4">
           <figure>
-            <a routerLink="box/six-month">
+            <a routerLink="box/:id">
              <img src="http://placehold.it/500x500?text=Photo of 6 Month Box">
              <figcaption>6 Month Subscription ❤ ❤ ❤ ❤ ❤</figcaption>
             </a>
@@ -39,13 +41,13 @@
         </div>
         <div class="col-md-4">
           <figure>
-            <a routerLink="box/twelve-month">
+            <a routerLink="box/:id">
              <img src="http://placehold.it/500x500?text=Photo of Year Box">
              <figcaption>Year Subscription ❤ ❤ ❤ ❤ ❤</figcaption>
            </a>
           </figure>
         </div>
-      </div>
+      </div> -->
 
   </div>
 </div>
