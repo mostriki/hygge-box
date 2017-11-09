@@ -1,7 +1,8 @@
 export class UserDetails {
   constructor(
     public name: string,
-    public email: string
+    public email: string,
+    // public orders: any[]
     // public firstName: string,
     // public lastName: string,
     // public streetAddress: string,
