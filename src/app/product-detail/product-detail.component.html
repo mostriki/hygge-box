@@ -9,7 +9,7 @@
           <ol>
             <li *ngFor="let item of boxToDisplay?.boxContents">{{item}}</li>
           </ol>
-          <p>{{boxToDisplay?.price}}</p>
+          <h4>${{boxToDisplay?.price}}</h4>
           <button class="btn btn-basic" (click)="addToCart(boxToDisplay?.name, boxToDisplay?.price, boxToDisplay?.monthsRemaining)">Add to Cart</button>
         </div>
       </div>
