@@ -11,9 +11,9 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 _HyggeBox is a storefront application to provide thoughtfully-curated boxes that celebrate the simple pleasures of life. Sourced from the Pacific Northwest and beyond and come packaged in locally-made, eco-conscious boxes. We specialize in gifts that reflect our sense of adventure and our constant pursuit of coziness._
 
-![Homepage](./../../assets/img/screen-shot1.png)
-![Product detail](./../../assets/img/screen-shot2.png)
-![Checkout](./../../assets/img/screen-shot3.png)
+![Homepage](./assets/img/screen-shot1.png)
+![Product detail](./assets/img/screen-shot2.png)
+![Checkout](./assets/img/screen-shot3.png)
 
 ### User Stories
 
