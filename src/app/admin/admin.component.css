@@ -2,6 +2,11 @@
     margin-top: 100px;
 }
 
+.list-group-item.active {
+  background-color: #9C27B0;
+  border-color: #9C27B0;
+}
+
 #coverImage {
     padding-top: 240px;
     display: block;

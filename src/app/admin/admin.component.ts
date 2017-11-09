@@ -25,12 +25,12 @@ export class AdminComponent {
           this.uid = user.uid;
         }
       });
-    }
-
-  ngOnInit() {
     this.userService.getUserById(this.uid).subscribe(dataLastEmittedFromObserver => {
       this.user = dataLastEmittedFromObserver;
     })
+    }
+
+  ngOnInit() {
     this.contactService.getContractEntries().subscribe(dataLastEmittedFromObserver => {
       for (let message of dataLastEmittedFromObserver) {
         this.messages.push(new ContactEntry(message.name, message.email, message.message));
