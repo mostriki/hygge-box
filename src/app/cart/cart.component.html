@@ -36,7 +36,7 @@
       </div>
       <div class="form-group">
         <label for="address">Address 2</label>
-        <input class="form-control" type="text"  placeholder="Apt, Suite or Building Number"  #billingStreet2 required>
+        <input [(ngModel)]="street2" class="form-control" type="text"  placeholder="Apt, Suite or Building Number"  #billingStreet2 required>
       </div>
       <div class="form-group">
         <label for="city">City<a class="text-danger">*</a></label>
@@ -68,7 +68,8 @@
         </div>
         <div class="form-group">
           <label for="address">Address 2</label>
-          <input class="form-control" type="text" placeholder="Apt, Suite or Building Number"  #shippingStreet2 required>
+          <input *ngIf="street2" [value]="street2" class="form-control" type="text" placeholder="Apt, Suite or Building Number" #shippingStreet2 required>
+          <input *ngIf="!street2" class="form-control" type="text" placeholder="Apt, Suite or Building Number" #shippingStreet2 required>
         </div>
         <div class="form-group">
           <label for="city">City</label>
