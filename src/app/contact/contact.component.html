@@ -55,6 +55,10 @@
     </div>
     <button class="btn btn-basic" (click)="contact(name.value, email.value, message.value)">Submit</button>
   </form>
-
+  <br>
+  <!-- ///Google Map API/// -->
+  <agm-map [latitude]="latMap" [longitude]="lngMap" [zoom]="zoom">
+    <agm-marker [latitude]="latMarker" [longitude]="lngMarker" [iconUrl]="iconUrl"></agm-marker>
+  </agm-map>
 <!-- container -->
 </div>

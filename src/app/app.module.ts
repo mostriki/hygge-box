@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { routing } from './app.routing';
-import { masterFirebaseConfig } from './api-keys';
+import { masterFirebaseConfig, masterGoogleMapConfig } from './api-keys';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { AngularFireAuthModule } from 'angularfire2/auth';
@@ -20,6 +20,7 @@ import { AboutComponent } from './about/about.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { NewsletterConfirmComponent } from './newsletter-confirm/newsletter-confirm.component';
 import { FourzerofourComponent } from './fourzerofour/fourzerofour.component';
+import { AgmCoreModule } from '@agm/core';
 
 
 export const firebaseConfig = {
@@ -52,7 +53,9 @@ export const firebaseConfig = {
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFireDatabaseModule,
     AngularFireAuthModule,
-
+    AgmCoreModule.forRoot({
+      apiKey: masterGoogleMapConfig.apikey
+    })
   ],
   providers: [AuthGuardService, AuthenticationService],
   bootstrap: [AppComponent]
