@@ -40,7 +40,7 @@ export const firebaseConfig = {
     ConfirmationComponent,
     AboutComponent,
     ProductDetailComponent,
-    NewsletterConfirmComponent
+    NewsletterConfirmComponent,
   ],
   imports: [
     BrowserModule,
