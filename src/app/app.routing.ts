@@ -10,6 +10,7 @@ import { ContactComponent } from './contact/contact.component';
 import { ConfirmationComponent } from './confirmation/confirmation.component';
 import { CartComponent } from './cart/cart.component';
 import { NewsletterConfirmComponent } from './newsletter-confirm/newsletter-confirm.component';
+import { FourzerofourComponent } from './fourzerofour/fourzerofour.component';
 
 const appRoutes: Routes = [
   {
@@ -50,6 +51,14 @@ const appRoutes: Routes = [
     path: 'cart',
     component: CartComponent,
     canActivate: [AuthGuardService]
+  },
+  {
+    path: '404',
+    component: FourzerofourComponent
+  },
+  {
+    path: '**',
+    redirectTo: '/404'
   }
  ];
 
