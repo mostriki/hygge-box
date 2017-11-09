@@ -5,7 +5,9 @@
         <img class="card-img-top" src="{{boxToDisplay?.img}}" alt="Card image cap">
         <div class="card-body">
           <h4 class="card-title">{{boxToDisplay?.name}}</h4>
-          <h5>Items in Box:</h5>
+          <h5 *ngIf="currentRoute === '/boxes/0'">Our Next Box:</h5>
+          <h5 *ngIf="currentRoute === '/boxes/1'">Every Month You Will Receive:</h5>
+          <h5 *ngIf="currentRoute === '/boxes/2'">Every Month You Will Receive:</h5>
           <ol>
             <li *ngFor="let item of boxToDisplay?.boxContents">{{item}}</li>
           </ol>

@@ -11,9 +11,9 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 _HyggeBox is a storefront application to provide thoughtfully-curated boxes that celebrate the simple pleasures of life. Sourced from the Pacific Northwest and beyond and come packaged in locally-made, eco-conscious boxes. We specialize in gifts that reflect our sense of adventure and our constant pursuit of coziness._
 
-_HyggeBox is an application to provide thoughtfully-curated boxes that celebrate the simple pleasures of life. Our monthly collections are sourced from the Pacific Northwest and beyond and come packaged in locally-made, eco-conscious boxes. We specialize in gifts that reflect our sense of adventure and our constant pursuit of coziness. Each of our boxes is designed to provide a personal retreat of balance and equipoise in today’s chaotic environment._
-
-![whiteboard notes](src/assets/img/whteboard.jpg)
+![Homepage](./src/assets/img/screen-shot1.png)
+![Product detail](./src/assets/img/screen-shot2.png)
+![Checkout](./src/assets/img/screen-shot3.png)
 
 ### User Stories
 
@@ -50,8 +50,7 @@ _HyggeBox is an application to provide thoughtfully-curated boxes that celebrate
 
 ### Database Requirements
 
-1. _Sign up for [Google Firebase](https://firebase.google.com/). Start a new project and generate an API key._
-
+1. _Sign up for [Google Firebase](https://firebase.google.com/) and [Google Maps API](https://developers.google.com/maps/documentation/javascript/get-api-key). Start a new project and generate an API key._
 
 2. _Run `$ git clone` [https://github.com/mostriki/hygge-box](https://github.com/mostriki/hygge-box) in your Desktop to download the project directory locally._
 
@@ -59,9 +58,9 @@ _HyggeBox is an application to provide thoughtfully-curated boxes that celebrate
 
 4. _Run `$ touch src/app/api-keys.ts` to create a new file called `api-keys.ts`._
 
-5. _Add your Firebase API key to `api-keys.ts`. It should look like this:_
+5. _Add your Firebase and Google Map API API keys to `api-keys.ts`. It should look like this:_
 
-` export const masterFirebaseConfig = {
+```export const masterFirebaseConfig = {
   apiKey: "XXXXXXXXXXXXXXXXXXX",
   authDomain: "XXXX.firebaseapp.com",
   databaseURL: "https://XXXXXXXX.firebaseio.com",
@@ -69,7 +68,11 @@ _HyggeBox is an application to provide thoughtfully-curated boxes that celebrate
   storageBucket: "XXXX.appspot.com",
   messagingSenderId: "XXXXXXXXXXX"
 };
-firebase.initializeApp(config);`
+
+export const masterGoogleMapConfig = {
+   apikey: "XXXXXXXXXXXXXXXXXXX"
+ }
+```
 
 6. _Run `$ npm install` to install the node dependencies._
 
