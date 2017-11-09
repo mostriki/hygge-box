@@ -4,6 +4,7 @@ import { UserService } from "../user.service";
 import { ContactEntry } from '../contact-entry.model';
 import { ContactService } from '../contact.service';
 import { AuthenticationService }  from '../authentication.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-admin',
@@ -17,7 +18,7 @@ export class AdminComponent {
   private uid;
   public messages = [];
 
-  constructor(private userService: UserService, private contactService: ContactService, private authService: AuthenticationService) {
+  constructor(private userService: UserService, private contactService: ContactService, private authService: AuthenticationService, private router: Router) {
     this.authService.user.subscribe(user => {
         if (user == null) {
         } else {
@@ -27,14 +28,14 @@ export class AdminComponent {
     }
 
   ngOnInit() {
+    this.userService.getUserById(this.uid).subscribe(dataLastEmittedFromObserver => {
+      this.user = dataLastEmittedFromObserver;
+    })
     this.contactService.getContractEntries().subscribe(dataLastEmittedFromObserver => {
       for (let message of dataLastEmittedFromObserver) {
         this.messages.push(new ContactEntry(message.name, message.email, message.message));
       }
     })
-    this.userService.getUserById(this.uid).subscribe(dataLastEmittedFromObserver => {
-      this.user = dataLastEmittedFromObserver;
-     })
   }
 
 

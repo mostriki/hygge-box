@@ -3,8 +3,12 @@
   border-color: #9C27B0;
 }
 
-#order-row {
+.order-row {
   margin-top: 100px;
+}
+
+.card {
+    height: 525px;
 }
 
 #coverImage {
