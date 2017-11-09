@@ -1,5 +1,5 @@
 <div id="coverImageDiv">
-  <img id="coverImage" src="./../../assets/img/product-detail-img.jpg" alt="">
+  <img id="coverImage" src="./../../assets/img/hygge-welcome.jpg" alt="">
 </div>
 
 <div class="container">
@@ -7,35 +7,32 @@
   <br>
 
   <div id="hyggeDefinition">
-    <br>
+
     <div class="row justify-content-md-center">
       <div class="col-sm-10">
         <p id="welcome">Welcome to HyggeBox! We provide thoughtfully-curated boxes that celebrate the simple pleasures of life. Our monthly collections are sourced from the Pacific Northwest and beyond and come packaged in locally-made, eco-conscious boxes. We specialize in gifts that reflect our sense of adventure and our constant pursuit of coziness. Each of our boxes is designed to provide a personal retreat of balance and equipoise in today’s chaotic environment.</p>
       </div>
     </div>
-
     <br>
     <hr>
-    <div class="row justify-content-md-center">
-      <div class="col-sm-6">
-        <p><span id="hyggeDefinitionTitle">Hygge</span><br />[hoo-gah] noun <br /><br />1. is a word used when acknowledging a feeling or moment, whether alone or with friends, at home or out, ordinary or extraordinary as cosy, charming or special.</p>
-      </div>
-    </div>
+    <hr>
+    <br>
   </div>
-  <br>
-  <hr>
-  <br>
+
   <div class="products">
     <h2 id="cent">OUR PRODUCTS</h2>
     <div class="row justify-content-center">
-
       <div *ngFor="let box of boxes | async" class="col-4  card">
-
           <div class="card-body">
             <img src="{{box.img}}" (click)="goToDetailPage(box)">
             <br>
             <br>
             <h3 id="cent">{{box.name}}</h3>
           </div>
-  </div>
-</div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <hr>
+    <hr>
+    <br>
