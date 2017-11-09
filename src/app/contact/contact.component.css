@@ -1,1 +1,6 @@
-
+#phoneImage {
+    padding-top: 240px;
+    display: block;
+    width: 100%;
+    height: auto;
+}
