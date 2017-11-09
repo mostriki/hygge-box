@@ -67,9 +67,9 @@ _HyggeBox is a storefront application to provide thoughtfully-curated boxes that
   projectId: "XXXX",
   storageBucket: "XXXX.appspot.com",
   messagingSenderId: "XXXXXXXXXXX"
-};```
+};
 
-```export const masterGoogleMapConfig = {
+export const masterGoogleMapConfig = {
    apikey: "XXXXXXXXXXXXXXXXXXX"
  }
 ```
