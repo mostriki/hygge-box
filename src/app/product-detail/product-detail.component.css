@@ -22,3 +22,7 @@ ul {
 .card {
   border: none;
 }
+
+#prod-row {
+  margin-top: 100px;
+}
