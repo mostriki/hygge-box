@@ -1,4 +1,4 @@
-figure {
+/*figure {
     margin: 0;
     border: 1px solid black;
     position: relative;
@@ -33,4 +33,11 @@ img {
 :host {
   padding: 1em;
   display: block;
+}*/
+
+#thanksImage {
+    padding-top: 240px;
+    display: block;
+    width: 100%;
+    height: auto;
 }

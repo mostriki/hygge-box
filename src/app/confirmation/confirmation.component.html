@@ -1,3 +1,8 @@
+<div id="thanksImageDiv">
+  <img id="thanksImage" src="./../../assets/img/thanks.jpg" alt="">
+</div>
+<br>
+<br>
 <div class="container">
   <h1>Thank you for your order!</h1>
   <div id="billingAndShipping" class="row">
@@ -40,8 +45,8 @@
       <div class="col-12">
         <h4 class="card-title">Order Details:</h4>
         <p class="card-text">{{cart.name}}</p>
-        <h4> Order Total: {{cart.price}} </h4>
-        <button class="btn btn-success" (click)="confirm()" name="button">Confirm Order</button>
+        <h4> Order Total: ${{cart.price}} </h4>
+        <button class="btn btn-basic" (click)="confirm()" name="button">Confirm Order</button>
         </div>
       </div>
     </div>
