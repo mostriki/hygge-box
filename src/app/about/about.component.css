@@ -1,9 +1,13 @@
 #veronicaProfileImage {
     display: block;
-    width: 100%;
-    height: auto;
+    width: 30%;
+    margin: auto;
+    border-radius: 2000px;
 }
 
+.veronicaProfileImage {
+  padding-top: 140px;
+}
 #aboutHeader {
 
 }
