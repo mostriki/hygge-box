@@ -57,7 +57,27 @@ export class UserService {
   confirmOrder(userId, cart){
     const order = this.database.list('/users/' + userId + '/orders');
     order.push({
-      cart
+      "name": cart.name,
+      "price": cart.price,
+      "length": cart.length,
+      "shippingFName": cart.info.shippingFName,
+      "shippingLName": cart.info.shippingLName,
+      "shippingStreet": cart.info.shippingStreet,
+      "shippingStreet2": cart.info.shippingStreet2,
+      "shippingCity": cart.info.shippingCity,
+      "shippingState": cart.info.shippingState,
+      "shippingZip": cart.info.shippingZip,
+      "billingFName": cart.info.billingFName,
+      "billingLName": cart.info.billingLName,
+      "billingStreet": cart.info.billingStreet,
+      "billingStreet2": cart.info.billingStreet2,
+      "billingCity": cart.info.billingCity,
+      "billingState": cart.info.billingState,
+      "billingZip": cart.info.billingZip,
+      "cardNumber": cart.info.cardNumber,
+      "cardExp": cart.info.cardExp,
+      "cardCVV": cart.info.cardCVV,
+      "giftMessage": cart.info.giftMessage
     })
   }
 }
