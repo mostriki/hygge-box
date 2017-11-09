@@ -32,34 +32,24 @@
 <!--  -->
   <hr>
   <br>
-  <h4>Alternative Form Fields</h4>
+  <h4>Fill out the form below and we'll get back to you ASAP!</h4>
   <br>
   <form>
     <div class="form-row">
       <div class="form-group col-md-6">
         <label for="inputName">Name</label>
-        <input type="email" class="form-control" id="inputName" placeholder="Name" required>
+        <input type="text" class="form-control" id="inputName" placeholder="Name" #name required>
       </div>
-      <div class="form-group col-md-6">
-        <label for="inputCompany">Company</label>
-        <input type="password" class="form-control" id="inputCompany" placeholder="Company">
-      </div>
-    </div>
-    <div class="form-row">
       <div class="form-group col-md-6">
         <label for="inputEmail">Email</label>
-        <input type="email" class="form-control" id="inputEmail" placeholder="Email" required>
-      </div>
-      <div class="form-group col-md-6">
-        <label for="inputPhoneNumber">Phone Number</label>
-        <input type="password" class="form-control" id="inputPhoneNumber" placeholder="Phone Number">
+        <input type="email" class="form-control" id="inputEmail" placeholder="Email" #email required>
       </div>
     </div>
     <div class="form-group">
       <label for="inputMessage">Message</label>
-      <textarea class="form-control" id="inputMessage" rows="4" required></textarea>
+      <textarea class="form-control" id="inputMessage" rows="4" #message required></textarea>
     </div>
-    <button class="btn btn-primary" type="submit" disabled> Disabled Submit</button>
+    <button class="btn btn-primary" (click)="contact(name.value, email.value, message.value)">Submit</button>
   </form>
 
 <!-- container -->
