@@ -1,94 +1,132 @@
+<div id="coverImageDiv">
+  <img id="coverImage" src="./../../assets/img/cart-img.jpg" alt="">
+</div>
+<br>
 <div class="container">
-<h1>Product: {{cart?.name}}</h1>
-<h1>Price: ${{cart?.price}}.00</h1>
-<!-- Boxes in the cart and the total price-->
-<h2>Shipping Address</h2>
-<h4>Please enter a shipping address</h4>
-  <div class="form-group">
-    <label for="first">First Name:</label>
-    <input [(ngModel)]="shippingFNameBind" class="form-control" type="text" #shippingFName required>
+  <br>
+  <h3>1. Review Your Order</h3>
+  <hr>
+  <br>
+  <div class="row">
+    <div class="col-lg-4 col-sm-12">
+      <img id="boxImage" src="{{(box | async)?.img}}" alt="">
+    </div>
+    <div class="col-lg-8 col-sm-12">
+      <h1>{{cart?.name}}</h1>
+      <h2>Grand Total: ${{cart?.price}}.00</h2>
+    </div>
   </div>
-  <div class="form-group">
-    <label for="last">Last Name:</label>
-    <input [(ngModel)]="shippingLNameBind" class="form-control" type="text"  #shippingLName required>
+  <br>
+  <hr>
+  <br>
+  <div class="row">
+    <div class="col-sm-6">
+      <h3>2. Billing Method</h3>
+      <div class="form-group">
+        <label for="first">First Name<a class="text-danger">*</a></label>
+        <input class="form-control" type="text"  #billingFName required>
+      </div>
+      <div class="form-group">
+        <label for="last">Last Name<a class="text-danger">*</a></label>
+        <input class="form-control" type="text"  #billingLName required>
+      </div>
+      <div class="form-group">
+        <label for="street">Street Address<a class="text-danger">*</a></label>
+        <input class="form-control" type="text"  #billingStreet required>
+      </div>
+      <div class="form-group">
+        <label for="address">Address 2</label>
+        <input class="form-control" type="text"  placeholder="Apt, Suite or Building Number"  #billingStreet2 required>
+      </div>
+      <div class="form-group">
+        <label for="city">City<a class="text-danger">*</a></label>
+        <input class="form-control" type="text"  #billingCity required>
+      </div>
+      <div class="form-group">
+        <label for="state">State<a class="text-danger">*</a></label>
+        <input class="form-control" type="text"  #billingState required>
+      </div>
+      <div class="form-group">
+        <label for="zipcode">Zip Code<a class="text-danger">*</a></label>
+        <input class="form-control" type="text"  #billingZip required>
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <!-- ///Shipping Form/// -->
+      <h3>3. Shipping Address</h3>
+        <div class="form-group">
+          <label for="first">First Name</label>
+          <input class="form-control" type="text"  #shippingFName required>
+        </div>
+        <div class="form-group">
+          <label for="last">Last Name</label>
+          <input class="form-control" type="text"  #shippingLName required>
+        </div>
+        <div class="form-group">
+          <label for="street">Street Address</label>
+          <input class="form-control" type="text"  #shippingStreet required>
+        </div>
+        <div class="form-group">
+          <label for="address">Address 2</label>
+          <input class="form-control" type="text" placeholder="Apt, Suite or Building Number"  #shippingStreet2 required>
+        </div>
+        <div class="form-group">
+          <label for="city">City</label>
+          <input class="form-control" type="text"  #shippingCity required>
+        </div>
+        <div class="form-group">
+          <label for="state">State</label>
+          <input class="form-control" type="text"  #shippingState required>
+        </div>
+        <div class="form-group">
+          <label for="zipcode">Zip Code</label>
+          <input class="form-control" type="text"  #shippingZip required>
+        </div>
+    </div>
   </div>
-  <div class="form-group">
-    <label for="street">Street Address:</label>
-    <input [(ngModel)]="shippingStreetBind" class="form-control" type="text"  #shippingStreet required>
+  <br>
+  <div class="row">
+    <div class="col-sm-12">
+      <!-- ///Billing Form/// -->
+      <h3>4. Payment Method</h3>
+      <div class="form-group">
+        <label for="cardnumber">Card Number<a class="text-danger">*</a></label>
+        <input class="form-control" type="text"  #cardNumber required>
+      </div>
+      <div class="form-group">
+        <label for="last">Expiration Date<a class="text-danger">*</a></label>
+        <input class="form-control" type="text"  #cardExp required>
+      </div>
+      <div class="form-group">
+        <label for="street">CVV<a class="text-danger">*</a></label>
+        <input class="form-control" type="text"  #cardCVV required>
+      </div>
+    </div>
   </div>
-  <div class="form-group">
-    <label for="address">Address 2:</label>
-    <input [(ngModel)]="shippingStreet2Bind" class="form-control" type="text" placeholder="Apt, Suite or Building Number"  #shippingStreet2 required>
+  <br>
+  <div class="row">
+    <div class="col-sm-12">
+      <h3>5. Voucher and Gift Message</h3>
+      <div class="form-group">
+        <label for="promo">Promo Code</label>
+        <input class="form-control" type="text"  #promo>
+      </div>
+    </div>
   </div>
-  <div class="form-group">
-    <label for="city">City:</label>
-    <input [(ngModel)]="shippingCityBind" class="form-control" type="text"  #shippingCity required>
+  <div class="row">
+    <div class="col-sm-12">
+      <div class="form-group">
+        <label for="message">Gift Message</label>
+        <input class="form-control" type="text"  #giftMessage>
+      </div>
+      <br>
+      <button class="btn btn-basic" type="button" (click)="toConfirmation(shippingFName.value, shippingLName.value, shippingStreet.value, shippingStreet2.value, shippingCity.value, shippingState.value, shippingZip.value, cardNumber.value, cardExp.value, cardCVV.value, billingFName.value, billingLName.value, billingStreet.value, billingStreet2.value, billingCity.value, billingState.value, billingZip.value, promo.value, giftMessage.value);">Checkout</button>
+      <br>
+      <br>
+      <h6>You will get to review your order next</h6>
+    </div>
   </div>
-  <div class="form-group">
-    <label for="state">State:</label>
-    <input [(ngModel)]="shippingStateBind" class="form-control" type="text"  #shippingState required>
-  </div>
-  <div class="form-group">
-    <label for="zipcode">Zip Code:</label>
-    <input [(ngModel)]="shippingZipBind" class="form-control" type="text"  #shippingZip required>
-  </div>
-
-<h2>Billing</h2>
-<h4>Please enter your billing information</h4>
-<div class="form-group">
-  <label for="cardnumber">Card Number:</label>
-  <input class="form-control" type="text" #cardNumber required>
-</div>
-<div class="form-group">
-  <label for="last">Expiration Date:</label>
-  <input class="form-control" type="text"  #cardExp required>
-</div>
-<div class="form-group">
-  <label for="street">CVV:</label>
-  <input class="form-control" type="text"  #cardCVV required>
-</div>
-
-<ng-container *ngIf="shippingFNameBind && shippingLNameBind && shippingStreetBind && shippingCityBind && shippingStateBind && shippingZipBind">
-<h5>Billing Address</h5>
-<div class="form-group">
-  <label for="first">First Name:</label>
-  <input class="form-control" type="text" [value]="shippingFNameBind"  #billingFName required>
-</div>
-<div class="form-group">
-  <label for="last">Last Name:</label>
-  <input class="form-control" type="text" [value]="shippingLNameBind"  #billingLName required>
-</div>
-<div class="form-group">
-  <label for="street">Street Address:</label>
-  <input class="form-control" type="text" [value]="shippingStreetBind"  #billingStreet required>
-</div>
-<!-- Checks to see if the second street address exists in the binding -->
-<div *ngIf="shippingStreet2Bind" class="form-group">
-  <label for="address">Address 2:</label>
-  <input class="form-control" type="text" [value]="shippingStreet2Bind"  placeholder="Apt, Suite or Building Number"  #billingStreet2 required>
-</div>
-<!-- Otherwise it loads as blank -->
-<div *ngIf="!shippingStreet2Bind" class="form-group">
-  <label for="address">Address 2:</label>
-  <input class="form-control" type="text"  placeholder="Apt, Suite or Building Number"  #billingStreet2 required>
-</div>
-<div class="form-group">
-  <label for="city">City:</label>
-  <input class="form-control" type="text" [value]="shippingCityBind"  #billingCity required>
-</div>
-<div class="form-group">
-  <label for="state">State:</label>
-  <input class="form-control" type="text" [value]="shippingStateBind"  #billingState required>
-</div>
-<div class="form-group">
-  <label for="zipcode">Zip Code:</label>
-  <input class="form-control" type="text" [value]="shippingZipBind" #billingZip required>
-</div>
-</ng-container>
-<h3>Promo code:</h3>
-<div class="form-group">
-  <label for="promo">Discount Code:</label>
-  <input class="form-control" type="text" #promo>
+<!-- ///Container End/// -->
 </div>
 
 <!-- <h3>Is this a gift?</h3>
@@ -96,12 +134,3 @@
   <input type="radio"  value="yes"> Yes<br>
   <input type="radio"  value="no"> No<br>
 </div> -->
-<div class="form-group">
-  <label for="message">Enter a gift message (optional):</label>
-  <input class="form-control" type="text"  #giftMessage>
-</div>
-<br>
-<button class="btn btn-basic" type="button" (click)="toConfirmation(shippingFName.value, shippingLName.value, shippingStreet.value, shippingStreet2.value, shippingCity.value, shippingState.value, shippingZip.value, cardNumber.value, cardExp.value, cardCVV.value, billingFName.value, billingLName.value, billingStreet.value, billingStreet2.value, billingCity.value, billingState.value, billingZip.value, promo.value, giftMessage.value);">Checkout</button>
-<br>
-<br>
-<h6>You will get to review your order next</h6>

@@ -15,7 +15,7 @@ export class ProductDetailService {
   }
 
   getBoxById(boxId: string){
-  return this.database.object('boxes/' + boxId);
-}
+    return this.database.object('boxes/' + boxId);
+  }
 
 }
