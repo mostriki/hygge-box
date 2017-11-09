@@ -14,7 +14,9 @@ export class UserService {
   getUserById(userId: string){
     return this.database.object('/users/' + userId);
   }
-
+  getOrders(userId: string) {
+    return this.database.list('/users/' + userId + '/orders')
+  }
   addUserById(name: string, uid: string, email: string){
     const newUser = this.database.object(`/users/` + uid);
     newUser.set({
