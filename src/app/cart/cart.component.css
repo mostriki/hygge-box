@@ -1,0 +1,13 @@
+#coverImage {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+hr.style2 {
+	border-top: 3px double #8c8b8b;
+}
+
+#boxImage {
+  width: 300px;
+}
