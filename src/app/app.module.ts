@@ -19,6 +19,7 @@ import { ConfirmationComponent } from './confirmation/confirmation.component';
 import { AboutComponent } from './about/about.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { NewsletterConfirmComponent } from './newsletter-confirm/newsletter-confirm.component';
+import { FourzerofourComponent } from './fourzerofour/fourzerofour.component';
 
 
 export const firebaseConfig = {
@@ -40,7 +41,8 @@ export const firebaseConfig = {
     ConfirmationComponent,
     AboutComponent,
     ProductDetailComponent,
-    NewsletterConfirmComponent
+    NewsletterConfirmComponent,
+    FourzerofourComponent,
   ],
   imports: [
     BrowserModule,
