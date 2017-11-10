@@ -24,64 +24,63 @@
       <h3>2. Billing Method</h3>
       <div class="form-group">
         <label for="first">First Name<a class="text-danger">*</a></label>
-        <input [(ngModel)]="fName" class="form-control" type="text"  #billingFName required>
+        <input class="form-control" type="text"  #billingFName required>
       </div>
       <div class="form-group">
         <label for="last">Last Name<a class="text-danger">*</a></label>
-        <input [(ngModel)]="lName" class="form-control" type="text"  #billingLName required>
+        <input class="form-control" type="text"  #billingLName required>
       </div>
       <div class="form-group">
         <label for="street">Street Address<a class="text-danger">*</a></label>
-        <input [(ngModel)]="street" class="form-control" type="text"  #billingStreet required>
+        <input class="form-control" type="text"  #billingStreet required>
       </div>
       <div class="form-group">
         <label for="address">Address 2</label>
-        <input [(ngModel)]="street2" class="form-control" type="text"  placeholder="Apt, Suite or Building Number"  #billingStreet2 required>
+        <input class="form-control" type="text"  placeholder="Apt, Suite or Building Number"  #billingStreet2 required>
       </div>
       <div class="form-group">
         <label for="city">City<a class="text-danger">*</a></label>
-        <input [(ngModel)]="city" class="form-control" type="text"  #billingCity required>
+        <input class="form-control" type="text"  #billingCity required>
       </div>
       <div class="form-group">
         <label for="state">State<a class="text-danger">*</a></label>
-        <input [(ngModel)]="state" class="form-control" type="text"  #billingState required>
+        <input class="form-control" type="text"  #billingState required>
       </div>
       <div class="form-group">
         <label for="zipcode">Zip Code<a class="text-danger">*</a></label>
-        <input [(ngModel)]="zip" class="form-control" type="text"  #billingZip required>
+        <input class="form-control" type="text"  #billingZip required>
       </div>
     </div>
-    <div *ngIf="fName && lName && street && city && state && zip" class="col-sm-6">
+    <div class="col-sm-6">
       <!-- ///Shipping Form/// -->
       <h3>3. Shipping Address</h3>
         <div class="form-group">
           <label for="first">First Name</label>
-          <input [value]="fName" class="form-control" type="text"  #shippingFName required>
+          <input class="form-control" type="text"  #shippingFName required>
         </div>
         <div class="form-group">
           <label for="last">Last Name</label>
-          <input [value]="lName" class="form-control" type="text"  #shippingLName required>
+          <input class="form-control" type="text"  #shippingLName required>
         </div>
         <div class="form-group">
           <label for="street">Street Address</label>
-          <input [value]="street" class="form-control" type="text"  #shippingStreet required>
+          <input class="form-control" type="text"  #shippingStreet required>
         </div>
         <div class="form-group">
           <label for="address">Address 2</label>
-          <input *ngIf="street2" [value]="street2" class="form-control" type="text" placeholder="Apt, Suite or Building Number" #shippingStreet2 required>
-          <input *ngIf="!street2" class="form-control" type="text" placeholder="Apt, Suite or Building Number" #shippingStreet2 required>
+          <input class="form-control" type="text" placeholder="Apt, Suite or Building Number"  #shippingStreet2 required>
         </div>
         <div class="form-group">
           <label for="city">City</label>
-          <input [value]="city" class="form-control" type="text"  #shippingCity required>
+          <input class="form-control" type="text"  #shippingCity required>
         </div>
         <div class="form-group">
           <label for="state">State</label>
-          <input [value]="state" class="form-control" type="text"  #shippingState required>
+          <input class="form-control" type="text"  #shippingState required>
         </div>
         <div class="form-group">
           <label for="zipcode">Zip Code</label>
-          <input [value]="zip" class="form-control" type="text"  #shippingZip required>
+          <input class="form-control" type="text"  #shippingZip required>
         </div>
     </div>
   </div>
