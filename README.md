@@ -60,7 +60,8 @@ _HyggeBox is a storefront application to provide thoughtfully-curated boxes that
 
 5. _Add your Firebase and Google Map API API keys to `api-keys.ts`. It should look like this:_
 
-```export const masterFirebaseConfig = {
+```
+  export const masterFirebaseConfig = {
   apiKey: "XXXXXXXXXXXXXXXXXXX",
   authDomain: "XXXX.firebaseapp.com",
   databaseURL: "https://XXXXXXXX.firebaseio.com",
