@@ -48,7 +48,11 @@ _HyggeBox is a storefront application to provide thoughtfully-curated boxes that
 * Typescript
 * Google Firebase
 
-### Database Requirements
+### Deploy
+
+Visit [https://giftbox-624a2.firebaseapp.com](https://giftbox-624a2.firebaseapp.com) to view the live website.
+
+### Local Deployment Requirements
 
 1. _Sign up for [Google Firebase](https://firebase.google.com/) and [Google Maps API](https://developers.google.com/maps/documentation/javascript/get-api-key). Start a new project and generate an API key._
 
